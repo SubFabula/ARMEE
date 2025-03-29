@@ -17,7 +17,6 @@ body {
   color: #000000;
   font-size: 100px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-bottom: ;
   position: absolute;
   top: 32%;
   left: 50%;
@@ -26,7 +25,8 @@ body {
 
 /* Navigation Menu */
 .navigation-menu {
-  background-color: #dddddd;
+  padding-left: 10px;
+  background-color: #19c8c8;
 }
 
 .navigation-menu::after {
@@ -39,16 +39,26 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-} 
+}
+
+.navigation-menu ul li a {
+  text-decoration: none;
+}
+
+.navigation-menu ul li a:hover {
+  text-decoration: underline;
+}
 
 .navigation-menu li a {
   color: #000000;
-  background-color: #dddddd;
   font-size: 20px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
   display: block;
   float: left;
-  padding: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: hidden;
 }
 
@@ -56,4 +66,15 @@ body {
 .content {
   margin-top: 15px;
   margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.about {
+  display: flex;
+  gap: 10px;
+}
+
+.about img {
+  float: left;
+  margin-bottom: 15px;
 }
