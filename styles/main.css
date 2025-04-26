@@ -5,13 +5,14 @@ body {
 
 /* Header */
 .header {
+  width: 100%;
   position: relative;
-  text-align: center;
 }
 
 .header img {
   width: 100%;
   display: block;
+  text-align: center;
 }
 
 .header h1 {
