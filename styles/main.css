@@ -1,82 +1,178 @@
+/* Mobile */
+@media (max-width: 720px) {
+  .navigation-a{
+    font-size: 1px;
+  }
+
+  .about {
+    display: block;
+    text-align: justify;
+  }
+
+  .img-corner {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .img-corner img {
+    max-width: 100%;
+    height: auto;
+  }  
+
+  .about p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+/* Body */
 body {
   margin: 0;
-  overflow-y: hidden;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Header */
 .header {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
+
 .header img {
   width: 100%;
+  height: auto;
   display: block;
-  text-align: center;
 }
 
 .header h1 {
   color: #000000;
-  font-size: 100px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15vw;
+  font-weight: 900;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
   position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  margin: 0;
 }
 
 /* Navigation Menu */
 .navigation-menu {
-  padding-left: 10px;
   background-color: #19c8c8;
 }
 
-.navigation-menu::after {
-  content: "";
-  display: block;
-  clear: both;
+.navigation-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-menu ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.navigation-menu ul li a {
-  text-decoration: none;
-}
-
-.navigation-menu ul li a:hover {
-  text-decoration: underline;
+.navigation-menu li {
+  display: inline-block;
 }
 
 .navigation-menu li a {
+  text-decoration: none;
   color: #000000;
   font-size: 20px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 900;
-  display: block;
-  float: left;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow: hidden;
+  display: inline-block;
 }
 
 /* Content */
 .content {
+  font-family: sans-serif;
+  line-height: 1.6;
   margin-top: 15px;
-  margin-left: 8px;
   margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div a:hover {
+  text-decoration: underline;
+}
+
+div a:focus {
+  outline: 3px solid #0000c5;
+}
+
+#about-h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 60px;
+}
+
+#about-header {
+  font-size: 90%;
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  padding-right: 2%;
+  margin: 0;
+}
+
+#about-header-ARMEE {
+  font-size: 100%;
+  font-weight: 900;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  padding: 0;
+  margin: 0;
 }
 
 .about {
-  display: flex;
-  gap: 10px;
+  display: block;
+  overflow: hidden;
 }
 
-.about img {
+.about p {
+  margin: 10px 0;
+}
+
+.img-corner {
   float: left;
-  margin-bottom: 15px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.img-corner img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
